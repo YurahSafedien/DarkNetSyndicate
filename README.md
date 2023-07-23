@@ -1,2 +1,2 @@
 # DarkNetSyndicate
-August Women's Hackathon: Zainap (leader), Jessica, Kgaugelo, Yusrah
+August Women's Hackathon: Zainap (leader), Yusrah(vice-leader), Jessica, Kgaugelo
