@@ -1,0 +1,38 @@
+Add edited code to main file regarding amounts and options
+Lines 38 - 49?
+
+***
+from input_validation import (
+    get_option_input,
+    get_valid_withdrawal_input,
+    get_valid_deposit_input,
+)
+
+from bank_calculations import (
+    calculate_deposit,
+    calculate_withdrawal,
+)
+
+# using this temp value for testing until connected to database account
+current_bank_amount = 2500
+
+user_option = get_option_input("Hi, do you wish to withdrawl or deposit?Press d-deposit or w-withdrawl:")
+
+if user_option == 'w':
+    # withdrawl_user_input -->> the amount  the user wishes to withdrawl
+    withdrawal_user_input = get_valid_withdrawal_input("how much do you wish to withdrawl?", current_bank_amount)
+    calculate_withdrawal(current_bank_amount, withdrawal_user_input)
+elif user_option == 'd':
+    # deposit_user_input -->> the amount  the user wishes to deposit
+    deposit_user_input = get_valid_deposit_input("how much do you wish to deposit?", current_bank_amount)
+    calculate_deposit(current_bank_amount, deposit_user_input)
+else:
+    print("Invalid input. Try again.")
+***
+
+Task only performs once of deposit or withdraw, can be changed if loop is implemented until user quits.
+If necessary to implement, can be done on frontend and backend are responding to each other using buttons
+to go to main page.
+
+Futhermore, I apologise for having to read my dry, unserious commentary...
+heh'v' 
